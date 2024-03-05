@@ -54,7 +54,7 @@ pip install /path_to_your_package
 Windows 参考指令：
 
 ```bash
-python main.py --output_dir ./output_dir --model_name_or_path meta-llama/Llama-2-7b-hf  --character 海绵宝宝 --download_from_modelscope False --ernie_api_key your_ernie_api_key --ernie_secret_key your_ernie_secret_key --dataset_length 1000 --overwrite_output_dir True --gradient_accumulation_steps 4 --per_device_train_batch_size 1 --learning_rate 2e-5 --warmup_steps 50 --save_steps 300 --num_train_epochs 3 --optim paged_adamw_8bit --logging_steps 1
+ python main.py --output_dir ./output_dir --model_name_or_path shakechen/Llama-2-7b-hf  --character 杜甫 --download_from_modelscope True --ernie_api_key your_ernie_api_key --ernie_secret_key your_ernie_secret_key --dataset_length 1000 --overwrite_output_dir True --gradient_accumulation_steps 4 --per_device_train_batch_size 1 --learning_rate 2e-5 --warmup_steps 50 --save_steps 300 --num_train_epochs 3 --optim paged_adamw_8bit --logging_steps 1 --cache_dir E:/model
 ```
 
 Linux 参考指令：
@@ -66,6 +66,7 @@ python main.py \
 --character 海绵宝宝 \
 --download_from_modelscope True \
 --ernie_api_key your_ernie_api_key \
+--ernie_secret_key your_ernie_secret_key \
 --dataset_length 1000 \
 --overwrite_output_dir True \
 --gradient_accumulation_steps 4 \
